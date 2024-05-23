@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color01: #FFFFFF;
+  --color02: #df1cff;
+  --color03: #ea0070;
+  --color04: #1ee0e1;
+  --color05: #0d0d2d;
+  --color06: #121242;
+  --color07: #731abc;
+  --color08: #2aa6ff;
+  --color09: #1a124f;
+  --color10: #e50aa7;
+  --color11: #ff17bd;
+  --color12: #100943;
+  --color13: #d9d9d9;
+  --color14: #297fff;
+  --color15: #bf38ff;
+  --color16: #cf68ff;
+  --color17: #28cbff;
+  --color18: #e1a1ff;
+  --color19: #462fff;
+  --color20: #4730ff;
+  --color21: #4484ff;
+  --color22: #000000;
+  --color23: #04011c;
+  --color24: #1ee0e1;
+  --color25: #18feff;
+  --color26: #07003e;
+  --color27: #8dff1b;
+  --color28: #3870ff;
+  --color29: #0f7bfb;
+  --color30: #00c2ff;
+  --color31: #477bff;
+  --color32: #a60277;
+  --color33: #d9d9d9;
+  --color34: #D011CC;
+  --cursor-shadow: 0 0 130px 100px rgb(30, 224, 225, 0.2); /* var(--color04) */
+  --body-bg: var(--color23);
+  --logo-gradient: linear-gradient(to bottom right, var(--color02) -25.59%, var(--color03) 138%);
+  --btn-gradient: linear-gradient(var(--body-bg), var(--body-bg)), var(--logo-gradient);
+  --f-family1: Helvetica, sans-serif;
+  --Axiforma-font: 'Axiforma', sans-serif;
+  --main-transition: all .4s ease-in-out;
+}
+
+@media (hover: none) {
+  body::before {
+    display: none;
+  }
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+header > div ul li a.active {
+  color: #ffffff !important;
+}
