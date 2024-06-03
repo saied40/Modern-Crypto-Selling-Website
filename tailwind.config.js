@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         body: "var(--body-bg)",
+        "body-tr": "var(--body-bg-tr)",
         active: "#fff !important",
       },
       boxShadow: {
@@ -13,7 +14,7 @@ module.exports = {
     },
     fontFamily: {
       body: ["Helvetica", "sans-serif"],
-      Axiforma: ["Axiforma", "sans-serif"],
+      axiforma: ["Axiforma", "sans-serif"],
     },
   },
   plugins: [],

@@ -1,77 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Axiforma font/Axiforma.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="./main.js"></script>
-  </head>
-  <body class="bg-body font-body before:fixed before:left-[--cursor-left] before:top-[--cursor-top] before:shadow-cursor before:rounded-full before:-z-50 min-w-full min-h-full [--cursor-left:-1000px] [--cursor-top:-1000px]">
-    <div class="grid grid-cols-12 gap-3.5 w-11/12 h-full fixed left-1/2 top-0 -z-10 -translate-x-1/2">
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
-      <div class="bg-[#ff00001a]"></div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/img08.png" type="image/x-icon">
+  <title>Modern Crypto Selling Website UI Design with tailwind css</title>
+  <link rel="stylesheet" href="./Axiforma font/Axiforma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body class="bg-body text-[var(--body-color)] font-body relative before:fixed before:left-[--cursor-left] before:top-[--cursor-top] before:shadow-cursor before:rounded-full before:-z-50 min-w-full min-h-[10000px] lg:overflow-x-hidden [--cursor-left:-1000px] [--cursor-top:-1000px]">
+  <header
+    class="container sticky top-0 bg-body-tr z-[1000] px-[10%] md:flex items-center justify-between md:w-full md:mx-auto max-w-none">
+    <nav class="flex items-center justify-between max-md:w-4/5 max-md:mx-auto py-4">
+      <a href="#"
+        class="logo font-bold text-3xl uppercase [background:var(--logo-gradient)] [background-clip:text!important] [-webkit-text-fill-color:transparent] select-none">knft.</a>
+      <button type="button" id="navBtn" class="text-white font-bold md:hidden">
+        <img src="./img/menu.svg" alt="menu.svg">
+      </button>
+    </nav>
+    <div class="dropdown-menu max-md:absolute max-md:top-[-1000%] max-md:w-full max-md:px-[10%] max-md:py-12 max-md:bg-body left-0 md:flex items-center justify-between md:w-full lg:w-4/5 z-[1000] max-md:border-b max-md:border-b-[var(--color03)]">
+      <ul class="flex items-start max-md:flex-col gap-6 my-8 md:mx-6 md:text-nowrap">
+        <li class="">
+          <a class="text-white/[.43] hover:text-white transition-colors duration-200 active" href="#">Home</a>
+        </li>
+        <li class="">
+          <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">All NFTs</a>
+        </li>
+        <li class="">
+          <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">Team</a>
+        </li>
+        <li class="">
+          <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">Terms &amp; Co.</a>
+        </li>
+        <li class="">
+          <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">Contact</a>
+        </li>
+      </ul>
+      <button
+        class="button rounded-2xl font-bold text-lg text-white border-2 border-solid border-transparent bg-origin-border bg-[image:var(--btn-gradient)] [background-clip:content-box,border-box] w-40 h-11 hover:bg-[image:var(--logo-gradient)] focus-visible:border-none focus-visible:outline-0">Get
+        in Touch</button>
     </div>
-    <header class="relative max-md:bg-body md:flex items-center justify-between md:w-4/5 md:mx-auto">
-      <nav class="flex items-center justify-between max-md:w-4/5 max-md:mx-auto py-4">
-        <a href="#" class="logo font-bold text-3xl uppercase [background:var(--logo-gradient)] [background-clip:text!important] [-webkit-text-fill-color:transparent] select-none">knft.</a>
-        <button type="button" id="navBtn" class="text-white font-bold md:hidden">
-          <img src="./img/menu.svg" alt="menu.svg">
-        </button>
-      </nav>
-      <div class="dropdown-menu max-md:absolute max-md:top-[-1000%] max-md:w-full max-md:px-[10%] max-md:py-12 max-md:bg-body md:flex items-center justify-between md:w-[inherit]">
-        <ul class="flex items-start max-md:flex-col gap-4 my-8">
-          <li class="">
-            <a class="text-white/[.43] hover:text-white transition-colors duration-200 active" href="#">Home</a>
-          </li>
-          <li class="">
-            <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">All NFTs</a>
-          </li>
-          <li class="">
-            <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">Team</a>
-          </li>
-          <li class="">
-            <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">Terms &amp; Co.</a>
-          </li>
-          <li class="">
-            <a class="text-white/[.43] hover:text-white transition-colors duration-200" href="#">Contact</a>
-          </li>
-        </ul>
-        <button class="button rounded-2xl font-bold text-lg text-white border-2 border-solid border-transparent bg-origin-border bg-[image:var(--btn-gradient)] [background-clip:content-box,border-box] w-40 h-11 hover:bg-[image:var(--logo-gradient)] focus-visible:border-none focus-visible:outline-0">Get in Touch</button>
+  </header>
+  <!-- TODO: make the responsive part in the next section -->
+  <section class="mt-20">
+    <div class="flex relative w-[90%] mx-auto max-lg:flex-col">
+      <div class="flex items-start justify-between flex-col gap-24">
+        <div class="flex flex-col items-start gap-8 relative">
+          <div class="flex flex-col items-start gap-4">
+            <h2 class="font-axiforma text-5xl font-medium lg:text-nowrap">Buy, Create &#38; <br> Sell <span
+                class="font-light text-[var(--color24)]">Unique NFTs</span> File.</h2>
+            <p class="text-base text-[var(--color04)]">NFTs are used for digital art and collectibles, GameFi <br>
+              projects, metaverses, and more.</p>
+          </div>
+          <button
+            class="py-2 px-6 [background:var(--logo-gradient)] text-white [transition:var(--main-transition)] border-0 outline-0 rounded-xl hover:shadow-[0_0_40px_0_var(--color03)]">Explore
+            NFTs</button>
+          <img src="./img/img08.png" alt="image 08" class="absolute -right-[20%] lg:right-[3%] -bottom-1">
+        </div>
+        <div class="flex flex-col items-start justify-between text-center gap-8">
+          <h3 class="font-axiforma font-semibold text-[2rem] text-left"><img class="inline" src="./img/img09.png"
+              alt="Eye png Image"> Nico NFT Marketplace Overview</h3>
+          <div class="flex flex-wrap items-center justify-between gap-1 xl:w-[120%] w-full text-left">
+            <div class="flex flex-col relative bg-transparent border-0 w-fit max-w-full">
+              <p class="font-body text-base">World Arts</p>
+              <b class="font-axiforma text-2xl">30.000 &#43;</b>
+            </div>
+            <div class="flex flex-col relative bg-transparent border-0 w-fit max-w-full">
+              <p class="font-body text-base">Digital Artists</p>
+              <b class="font-axiforma text-2xl">17.000 &#43;</b>
+            </div>
+            <div class="flex flex-col relative bg-transparent border-0 w-fit max-w-full">
+              <p class="font-body text-base">Live Auctions</p>
+              <b class="font-axiforma text-2xl">22.000 &#43;</b>
+            </div>
+            <div class="flex flex-col relative bg-transparent border-0 w-fit max-w-full">
+              <p class="font-body text-base">Unique Products</p>
+              <b class="font-axiforma text-2xl">50.000 &#43;</b>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
-    <!-- TODO: All Next Sections -->
-    <section class="text-white">
-      <h1>Landing Section</h1>
-    </section>
-    <section class="text-white">
-      <h1>Most Popular NFTs Section</h1>
-    </section>
-    <section class="text-white">
-      <h1>Create & Sell NFT files Section</h1>
-    </section>
-    <section class="text-white">
-      <h1>Categories Section</h1>
-    </section>
-    <section class="text-white">
-      <h1>News Section</h1>
-    </section>
-    <section class="text-white">
-      <h1>Contact Section</h1>
-    </section>
-    <footer class="text-white">
-      <h1>Footer</h1>
-    </footer>
-  </body>
+      <div class="relative">
+        <!-- <img class="absolute -right-9 top-0 z-20 w-[29rem] rounded-full md:translate-x-[155%] md:translate-y-[14%] max-w-[unset]" src="./img/img01.png" alt="image 01"> -->
+        <!-- <img class="absolute -right-9 top-0 z-10 md:translate-x-[129%] md:translate-y-0 max-w-[unset] max-md:w-full" src="./img/circle.svg" alt="Circle svg Image"> -->
+        <img src="./img/hero.png" alt="hero.png" class="lg:w-[120%] lg:max-w-none">
+        <img
+          class="absolute bottom-[34%] left-16 lg:left-12 z-30 w-1/4 sm:w-[27%] md:w-[29%] lg:w-40 max-w-none lg:bottom-1/3"
+          src="./img/cyber.svg" alt="Cyber svg Image">
+      </div>
+    </div>
+  </section>
+  <!--
+      TODO: All Next Sections :
+
+      Most Popular NFTs Section
+      Create & Sell NFT files Section
+      Categories Section
+      News Section
+      Contact Section
+      Footer
+    -->
+</body>
+
 </html>
+<!-- <div class="grid grid-cols-12 gap-3.5 w-11/12 h-full fixed left-1/2 top-0 -z-10 -translate-x-1/2">
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+          <div class="bg-[#ff00001a]"></div>
+        </div> -->

@@ -8,43 +8,48 @@
   --color02: #df1cff;
   --color03: #ea0070;
   --color04: #1ee0e1;
-  --color05: #0d0d2d;
-  --color06: #121242;
-  --color07: #731abc;
-  --color08: #2aa6ff;
-  --color09: #1a124f;
-  --color10: #e50aa7;
-  --color11: #ff17bd;
-  --color12: #100943;
+  /* --color05: #0d0d2d; */
+  /* --color06: #121242; */
+  /* --color07: #731abc; */
+  /* --color08: #2aa6ff; */
+  /* --color09: #1a124f; */
+  /* --color10: #e50aa7; */
+  /* --color11: #ff17bd; */
+  /* --color12: #100943; */
   --color13: #d9d9d9;
   --color14: #297fff;
   --color15: #bf38ff;
   --color16: #cf68ff;
   --color17: #28cbff;
   --color18: #e1a1ff;
-  --color19: #462fff;
-  --color20: #4730ff;
-  --color21: #4484ff;
-  --color22: #000000;
+  /* --color19: #462fff; */
+  /* --color20: #4730ff; */
+  /* --color21: #4484ff; */
+  /* --color22: #000000; */
   --color23: #04011c;
   --color24: #1ee0e1;
-  --color25: #18feff;
-  --color26: #07003e;
-  --color27: #8dff1b;
-  --color28: #3870ff;
-  --color29: #0f7bfb;
-  --color30: #00c2ff;
-  --color31: #477bff;
-  --color32: #a60277;
-  --color33: #d9d9d9;
-  --color34: #D011CC;
+  /* --color25: #18feff; */
+  /* --color26: #07003e; */
+  /* --color27: #8dff1b; */
+  /* --color28: #3870ff; */
+  /* --color29: #0f7bfb; */
+  /* --color30: #00c2ff; */
+  /* --color31: #477bff; */
+  /* --color32: #a60277; */
+  /* --color33: #d9d9d9; */
+  /* --color34: #D011CC; */
+  --color35: #dee2e6;
   --cursor-shadow: 0 0 130px 100px rgb(30, 224, 225, 0.2); /* var(--color04) */
   --body-bg: var(--color23);
+  --body-bg-tr: rgba(4, 1, 28, 0.8);
+  --body-color: var(--color35);
   --logo-gradient: linear-gradient(to bottom right, var(--color02) -25.59%, var(--color03) 138%);
   --btn-gradient: linear-gradient(var(--body-bg), var(--body-bg)), var(--logo-gradient);
+  --landing-bg-gradient: radial-gradient(var(--color13) 0%, var(--color14) 0%, var(--color15) 22%, var(--color16) 52%, var(--color17) 74%, var(--color18) 100%);
   --f-family1: Helvetica, sans-serif;
   --Axiforma-font: 'Axiforma', sans-serif;
   --main-transition: all .4s ease-in-out;
+  --shadow1: 0 0 40px 0 var(--color03);
 }
 
 @media (hover: none) {
@@ -59,5 +64,5 @@ img {
 }
 
 header > div ul li a.active {
-  color: #ffffff !important;
+  color: var(--color01) !important;
 }
